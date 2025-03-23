@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Option Price Calculator (Black-Scholes)</h1>
+        
+        <label for="stockPrice">Stock Price (S):</label>
+        <input type="number" id="stockPrice" placeholder="Stock Price">
+
+        <label for="strikePrice">Strike Price (K):</label>
+        <input type="number" id="strikePrice" placeholder="Strike Price">
+
+        <label for="timeToMaturity">Time to Maturity (T, in years):</label>
+        <input type="number" id="timeToMaturity" step="0.01" placeholder="Years to Maturity">
+
+        <label for="volatility">Volatility (σ, as decimal):</label>
+        <input type="number" id="volatility" step="0.01" placeholder="Volatility">
+
+        <label for="riskFreeRate">Risk-Free Rate (r, as decimal):</label>
+        <input type="number" id="riskFreeRate" step="0.01" placeholder="Risk-Free Rate">
+
+        <button onclick="calculateOptionPrice()">Calculate</button>
+
+        <h2>Call Option Price: <span id="callPrice">$0.00</span></h2>
+        <h2>Put Option Price: <span id="putPrice">$0.00</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
