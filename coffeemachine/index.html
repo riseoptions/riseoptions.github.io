@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Coffee Machine</h1>
+
+        <div class="machine-display">
+            <h2 id="machineStatus">Select your coffee!</h2>
+            <div id="resourceStatus">
+                <p>Water: <span id="waterLevel">500</span>ml</p>
+                <p>Milk: <span id="milkLevel">300</span>ml</p>
+                <p>Coffee Beans: <span id="coffeeLevel">100</span>g</p>
+                <p>Cups: <span id="cupCount">5</span></p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="makeCoffee('espresso')">Espresso</button>
+            <button onclick="makeCoffee('latte')">Latte</button>
+            <button onclick="makeCoffee('cappuccino')">Cappuccino</button>
+        </div>
+
+        <div class="resources">
+            <button onclick="addResources()">Add Resources</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
